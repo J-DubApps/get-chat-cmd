@@ -47,9 +47,42 @@ notepad $PROFILE
 ```
 
 2. Copy and paste the contents of `ai_powershell_commands.ps1` into your profile
-3. Save the file and restart PowerShell
+3. Save the file and restart PowerShell 
 
 Alternatively, you can add this line to your PowerShell profile to source the functions file:
 
 ```powershell
 . "C:\Users\username\Desktop\ai_powershell_commands.ps1"
+```
+
+## Disclaimer
+
+The functions provided in this repository are intended to assist in generating PowerShell commands through AI models. Users are responsible for reviewing and understanding the commands generated before execution. The author assumes no liability for unintended consequences resulting from the use or misuse of these functions, including but not limited to inaccurate prompts leading to undesired command outputs. Additionally, the author is not responsible for any API usage charges incurred while using these functions. Users should monitor their API usage to avoid unexpected costs.  
+
+## License
+
+This project is licensed under the MIT License: 
+
+MIT License
+
+Copyright (c) 2025 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.  
+
+For more details, refer to the [MIT License](https://opensource.org/licenses/MIT). [oai_citation_attribution:0‡Wikipedia](https://en.wikipedia.org/wiki/MIT_License?utm_source=chatgpt.com)

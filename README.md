@@ -12,7 +12,7 @@ This repository contains PowerShell functions that convert plain English request
 
 1. Edit `ai_powershell_commands.ps1` to replace:  <br />
 — `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key  <br />
-— `YOUR_OPENAI_API_KEY` with your actual OpenAI API key  <br />    — `test` <br />
+— `YOUR_OPENAI_API_KEY` with your actual OpenAI API key  <br />
 — `YOUR_ANTHROPIC_API_API_KEY` with your actual Anthropoic API key
 
    **Note**:   If you primarily only use Openrouter.ai as your API gateway, the OpenAI and Anthropic

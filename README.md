@@ -6,11 +6,15 @@
   width="600" 
   height="400">
 
-This repo contains my PowerShell functions I use to: state plain English requests to my chosen AI-LLM, receiving back a PS command. The LLM outputs the PS command for review on the console & copies the command to clipboard. In the gif animation above, I am asking 3 different AI models for commands via a plain-english "goal statement".  **NOTE**: you **must** have *your own* API keys to use all 3 of these functions in `ai_powershell_commands.ps1`, or *at least one* if you want to only use a single AI provider (PS [Openrouter.ai](https://openrouter.ai) us a great gateway to use different popular AI models).  
+`ai_powershell_commands.ps1` in this repo contains my PowerShell functions I use for: stating plain English requests to a chosen AI-LLM --> outputting a generated PS command to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 different AI models for code for basic plain-English requests.  Requests should be short and goal/outcome-oriented.  
 
-Also you can rename the functions to anything you want (I think "`get-ai-cmd`" was better but I'm too lazy to rename everything 😂).
+**NOTE**: you **must** have *your own* API keys with all 3 AI providers to use the functions in `ai_powershell_commands.ps1` as-written. You can choose to leverage a single function if have a single AI provider preference ***or***, if you can host your own Chat models locally, I provide a non-API key request function for use with locally-hosted models--via the optional `get-chat-local` function (for users of LM Studio, Ollama, etc). 
 
-These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested).  Engineers & Vibe-Coders alike, please see disclaimer at bottom! This code is NOT tested or intended in any prod environment.
+If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway to use [many different free and paid models](https://openrouter.ai/models).  
+
+Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I'm too lazy to rename everything 😂).
+
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested).  Engineers & Vibe-Coders alike, listen-up: see disclaimer here and in the license-agreement. This code is NOT tested in, or intended for, any prod environment.
 
 ## Functions
 

@@ -62,7 +62,7 @@ These functions will:
 2. Display the resulting PowerShell command in colored text (without executing any code)
 3. Copy the command to your clipboard for easy use
 
-## If using the optional **```get-chat-local``** function, you have some additional parameters you can use.
+## If using the optional **```get-chat-local```** function, you have some additional parameters you can use.
 
 ### Basic get-chat-local usage with defaults
 ```powershell

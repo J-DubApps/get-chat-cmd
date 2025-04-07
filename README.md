@@ -8,7 +8,7 @@
 
 The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions I use for: stating plain English requests to a chosen AI-LLM --> outputting a generated PS command -- to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
-***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written. You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally**: I provide a 4th function for use with locally-hosted models--via the optional `get-chat-local` func (for users of LM Studio, Ollama, etc). 
+***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written. You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
 
 If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway to use [many different free and paid models](https://openrouter.ai/models).  
 
@@ -21,7 +21,8 @@ These functions are intended for use in **PowerShell Core 7.5+** (they may work 
 - `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/quasar-alpha" model
 - `get-chat-cmd2`: Uses OpenAI's API with the "gpt-4o-mini" model
 - `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
-
+- `get-chat-local`: Optional function that makes calls to locally-hosted Chat model (only tested with LM Studio)
+ 
 ## Setup
 
 1. Edit `ai_powershell_commands.ps1` to replace:  <br />

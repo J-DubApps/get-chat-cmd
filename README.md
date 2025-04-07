@@ -1,6 +1,10 @@
 # get-chat-cmd: AI PowerShell Command Generator
 
-
+<img 
+  src="https://raw.githubusercontent.com/J-DubApps/get-chat-cmd/main/get-chat-cmd.gif" 
+  alt="Animated GIF" 
+  width="500" 
+  height="400">
 
 This repo contains my PowerShell functions that I use for stating plain English requests to your chosen AI-LLM, and receiving back a PS command.  LLM outputs a PS command for review in console + copies the command to clipboard. **NOTE**: You **must** have *your own* API key from *at least one* of the 3 included AI Service Providers in order to minimally use *any one* of the 3 functions in `ai_powershell_commands.ps1`.  It is not expensive to maintain 3 API keys for these providers (and Openrouter is a gateway to multiple popular AI models).  
 

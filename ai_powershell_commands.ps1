@@ -168,6 +168,68 @@ function get-chat-cmd3 {
     }
 }
 
+function get-cmd-local {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$prompt,
+        
+        [Parameter(Mandatory = $false)]
+        [string]$endpoint = "http://localhost:1234/v1/chat/completions",
+        
+        [Parameter(Mandatory = $false)]
+        [string]$model = "local-model",
+        
+        [Parameter(Mandatory = $false)]
+        [double]$temperature = 0.1
+    )
+
+    # Create a guiding prompt to ensure the LLM only responds with a PowerShell command
+    $systemContent = "You are a PowerShell expert. Respond ONLY with the PowerShell command that accomplishes the user's request. Do not include explanations, warnings, or anything else - JUST the command. If multiple commands are needed, combine them appropriately with semicolons or line continuation."
+
+    # Prepare the API request body in OpenAI-compatible format for LM Studio
+    $body = @{
+        model = $model
+        messages = @(
+            @{
+                role = "system"
+                content = $systemContent
+            },
+            @{
+                role = "user"
+                content = $prompt
+            }
+        )
+        temperature = $temperature
+        max_tokens = 1000
+    } | ConvertTo-Json
+
+    # Set request headers
+    $headers = @{
+        "Content-Type" = "application/json"
+    }
+
+    # Make the API call
+    try {
+        $response = Invoke-RestMethod -Uri $endpoint -Method Post -Headers $headers -Body $body
+        
+        # Extract just the command from the response
+        $commandResponse = $response.choices[0].message.content.Trim()
+        
+        # Copy the command to clipboard
+        $commandResponse | Set-Clipboard
+        
+        # Display the command in blue text
+        Write-Host $commandResponse -ForegroundColor Blue
+        Write-Host "Command copied to clipboard!" -ForegroundColor Green
+        
+        return $commandResponse
+    }
+    catch {
+        Write-Error "Error making request to local LLM: $_"
+        return $null
+    }
+}
+
 #region LICENSE
 <#
       MIT License

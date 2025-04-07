@@ -3,8 +3,9 @@
                     J-Dub's get-chat-cmd Functions
                 .DESCRIPTION
                     This PS Script provides access to my current Functions leveraging three of my favorite 
-                    LLMs for PS command-building (via popular AI LLMs) on-the-fly.  
-                    The 3 models I use are hosted at Anthropic, OpenAI, and OpenRouter - they are (in order of pricing 
+                    LLMs for PS command-building (via popular AI LLMs) on-the-fly. Also includes a 4th function for 
+                    making calls to a locally-hosted LLM (LM Studio / Ollama / etc).
+                    The 3 main models I use are hosted at Anthropic, OpenAI, and OpenRouter - they are (in order of pricing 
                     in spring 2025):
                     openrouter/quasar-alpha
                     gpt-4o-mini
@@ -186,7 +187,7 @@ function get-cmd-local {
     # Create a guiding prompt to ensure the LLM only responds with a PowerShell command
     $systemContent = "You are a PowerShell expert. Respond ONLY with the PowerShell command that accomplishes the user's request. Do not include explanations, warnings, or anything else - JUST the command. If multiple commands are needed, combine them appropriately with semicolons or line continuation."
 
-    # Prepare the API request body in OpenAI-compatible format for LM Studio
+    # Prepare the API request body in OpenAI-compatible format for LM Studio or Ollama
     $body = @{
         model = $model
         messages = @(

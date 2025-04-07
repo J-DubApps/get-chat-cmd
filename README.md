@@ -6,14 +6,16 @@ This repository contains PowerShell functions that convert plain English request
 
 - `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/quasar-alpha" model
 - `get-chat-cmd2`: Uses OpenAI's API with the "gpt-4o-mini" model
+- `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
 
 ## Setup
 
 1. Edit `ai_powershell_commands.ps1` to replace:
    - `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key
    - `YOUR_OPENAI_API_KEY` with your actual OpenAI API key
+   - `YOUR_ANTHROPIC_API_KEY` with your actual OpenAI API key
 
-2. Import the functions into your current PowerShell session:
+3. Import the functions into your current PowerShell session:
 
 ```powershell
 . C:\Users\username\Desktop\ai_powershell_commands.ps1
@@ -29,11 +31,14 @@ get-chat-cmd1 "List all running processes sorted by memory usage"
 
 # Using OpenAI (gpt-4o-mini)
 get-chat-cmd2 "Find files modified in the last 24 hours"
+
+# Using Anthropic (claude-3-7-sonnet-20250219)
+get-chat-cmd3 "List all running processes"
 ```
 
-The functions will:
+These functions will:
 1. Make an API call to the appropriate service
-2. Display the resulting PowerShell command in colored text
+2. Display the resulting PowerShell command in colored text (without executing any code)
 3. Copy the command to your clipboard for easy use
 
 ## Adding to Your PowerShell Profile

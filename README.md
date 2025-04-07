@@ -62,6 +62,21 @@ These functions will:
 2. Display the resulting PowerShell command in colored text (without executing any code)
 3. Copy the command to your clipboard for easy use
 
+## If using the optional **```get-chat-local``** function, you have some additional parameters you can use.
+
+### Basic get-chat-local usage with defaults
+```powershell
+get-chat-local "List all processes using more than 100MB of memory"
+```
+### Custom endpoint if using different port
+```powershell
+get-chat-local -prompt "Find all .log files modified in the last 24 hours" -endpoint "http://localhost:8080/v1/chat/completions"
+```
+### Specify model name and adjust temperature
+```powershell
+get-chat-local -prompt "Create a script to backup my Documents folder" -model "llama3-8b" -temperature 0.2
+```
+
 ## Adding to Your PowerShell Profile
 
 To make these functions available in all your PowerShell sessions, add the contents of `ai_powershell_commands.ps1` to your PowerShell profile:

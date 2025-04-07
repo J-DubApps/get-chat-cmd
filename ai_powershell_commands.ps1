@@ -122,7 +122,7 @@ function get-chat-cmd3 {
     )
 
     # Set your Anthropic API key (you may want to store this more securely)
-    $AnthropicAPIKey = "YOUR_ANTHROPIC_API_KEY_HERE"
+    $AnthropicAPIKey = "YOUR_ANTHROPIC_API_KEY"
 
     # Create a guiding prompt to ensure Claude only responds with a PowerShell command
     $systemContent = "You are a PowerShell expert. Respond ONLY with the PowerShell command that accomplishes the user's request. Do not include explanations, warnings, or anything else - JUST the command. If multiple commands are needed, combine them appropriately with semicolons or line continuation."

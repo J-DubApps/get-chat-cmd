@@ -14,21 +14,21 @@ The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell 
 -   **Natural Language Input**: Describe the command you need in plain English.
 -   **Clipboard Integration**: Automatically copies the generated command to your clipboard.
 
-***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written (see info on obtaining API keys near the end of this Readme). You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
-
-If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  
-
-Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I am too lazy to rename everything 😂).
-
-These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or in license-agreement. This code is NOT tested in, or intended for, any prod environment.
-
 ## Functions
 
 - `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/quasar-alpha" model
 - `get-chat-cmd2`: Uses OpenAI's API with the "gpt-4o-mini" model
 - `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
 - `get-chat-local`: Optional function for calls to locally-hosted Chat models (only tested with LM Studio)
- 
+
+## Usage limitations
+
+***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written (see info on obtaining API keys near the end of this Readme). You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
+
+If you do not know how to locally-host your own Chat model and find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  
+
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or in license-agreement. This code is NOT tested in, or intended for, any prod environment.
+
 ## Setup
 
 1. Edit `ai_powershell_commands.ps1` to replace:  <br />
@@ -101,6 +101,8 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 ```powershell
 . "C:\Users\username\Desktop\ai_powershell_commands.ps1"
 ```
+
+Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I am too lazy to rename everything 😂).
 
 ## Obtaining API Keys
 

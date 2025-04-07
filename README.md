@@ -16,7 +16,7 @@ This repository contains PowerShell functions that convert plain English request
 2. Import the functions into your current PowerShell session:
 
 ```powershell
-. C:\Users\westj\Desktop\ai_powershell_commands.ps1
+. C:\Users\username\Desktop\ai_powershell_commands.ps1
 ```
 
 ## Usage

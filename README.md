@@ -14,8 +14,8 @@ This repository contains PowerShell functions that convert plain English request
    - `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key  
    - `YOUR_OPENAI_API_KEY` with your actual OpenAI API key
    
-   - `test`
-   - `YOUR_ANTHROPIC_API_API_KEY` with your actual Anthropoic API key
+- `test`
+- `YOUR_ANTHROPIC_API_API_KEY` with your actual Anthropoic API key
 
    **Note**:   If you primarily only use Openrouter.ai as your API gateway, the OpenAI and Anthropic
                models can be called through "openrouter/model-name" as well.  You'd simply modify the

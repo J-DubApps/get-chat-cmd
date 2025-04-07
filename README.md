@@ -6,9 +6,9 @@
   width="400" 
   height="250">
 
-`ai_powershell_commands.ps1` in this repo contains my PowerShell functions I use for: stating plain English requests to a chosen AI-LLM --> outputting a generated PS command to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 different AI models for code for basic plain-English requests.  Requests should be short and goal/outcome-oriented.  
+The script `ai_powershell_commands.ps1` in this repo contains my own PowerShell functions I use for stating plain English requests to a chosen AI-LLM --> outputting a generated PS command -- to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
-**NOTE**: you **must** have *your own* API keys with all 3 AI providers to use the functions in `ai_powershell_commands.ps1` as-written. You can choose to leverage a single function if have a single AI provider preference ***or***, if you can host your own Chat models locally, I provide a non-API key request function for use with locally-hosted models--via the optional `get-chat-local` function (for users of LM Studio, Ollama, etc). 
+***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written. You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally**: I provide a 4th function for use with locally-hosted models--via the optional `get-chat-local` func (for users of LM Studio, Ollama, etc). 
 
 If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway to use [many different free and paid models](https://openrouter.ai/models).  
 

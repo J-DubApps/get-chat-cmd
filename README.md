@@ -21,7 +21,7 @@ The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell 
 - `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
 - `get-chat-local`: Optional function for calls to locally-hosted Chat models (only tested with LM Studio)
 
-## Usage limitations
+## Requirements / Limitations
 
 ***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written.  If you are new to using API calls in PowerShell, info on obtaining API keys is below. You can also choose to *only* use a single function with a preferred AI provider ***or*** your own ***locally-hosted*** Chat model (via `get-chat-local` func which supports LM Studio and Ollama). 
 

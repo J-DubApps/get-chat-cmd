@@ -6,7 +6,7 @@
   width="600" 
   height="400">
 
-This repo contains my PowerShell functions that I use for stating plain English requests to your chosen AI-LLM, and receiving back a PS command.  LLM outputs a PS command for review in console + copies the command to clipboard. **NOTE**: You **must** have *your own* API key from *at least one* of the 3 included AI Service Providers in order to minimally use *any one* of the 3 functions in `ai_powershell_commands.ps1`.  It is not expensive to maintain 3 API keys for these providers (and Openrouter is a gateway to multiple popular AI models).  
+This repo contains my PowerShell functions I use to: state plain English requests to my chosen AI-LLM, receiving back a PS command. The LLM outputs the PS command for review on the console & copies the command to clipboard. **NOTE**: you **must** have *your own* API keys to use all 3 of these functions in `ai_powershell_commands.ps1`, or *at least one* if you want to only use a single AI provider (PS [Openrouter.ai](https://openrouter.ai) us a great gateway to use different popular AI models).  
 
 These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).  
 Also you can rename the functions to anything you want (I think "`get-ai-cmd`" is better, but I'm too lazy to rename everything 😂).

@@ -3,8 +3,8 @@
 <img 
   src="https://raw.githubusercontent.com/J-DubApps/get-chat-cmd/main/get-chat-cmd.gif" 
   alt="Animated GIF" 
-  width="600" 
-  height="400">
+  width="400" 
+  height="250">
 
 `ai_powershell_commands.ps1` in this repo contains my PowerShell functions I use for: stating plain English requests to a chosen AI-LLM --> outputting a generated PS command to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 different AI models for code for basic plain-English requests.  Requests should be short and goal/outcome-oriented.  
 

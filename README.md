@@ -23,9 +23,9 @@ The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell 
 
 ## Usage limitations
 
-***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written (see info on obtaining API keys near the end of this Readme). You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
+***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written.  If you are new to using API calls in PowerShell, info on obtaining API keys is below. You can also choose to *only* use a single function with a preferred AI provider ***or*** your own ***locally-hosted*** Chat model (via `get-chat-local` func which supports LM Studio and Ollama). 
 
-If you do not know how to locally-host your own Chat model and find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  
+If you do not know how to locally-host your own Chat models and don't like the idea of giving "big AI" your money: might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models), and their pricing for "big AI models" is usually resonable.
 
 These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or in license-agreement. This code is NOT tested in, or intended for, any prod environment.
 

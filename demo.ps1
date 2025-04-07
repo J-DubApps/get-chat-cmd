@@ -14,7 +14,7 @@ if ($content -contains "YOUR_OPENROUTER_API_KEY" -or $content -contains "YOUR_OP
     exit
 }
 
-Write-Host "`n=== AI PowerShell Command Generator Demo ===`n" -ForegroundColor Magenta
+Write-Host "`n=== AI PowerShell Command Generator Demo ===`n" -ForegroundColor Yellow
 
 # Demo for get-chat-cmd1 (OpenRouter - quasar-alpha)
 Write-Host "Example 1: Using get-chat-cmd1 (OpenRouter - quasar-alpha)" -ForegroundColor Cyan

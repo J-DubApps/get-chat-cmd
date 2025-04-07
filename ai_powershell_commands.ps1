@@ -14,7 +14,8 @@
                     
                     For more info see https://github.com/J-DubApps/get-chat-cmd/blob/main/README.md
                 .NOTES
-                      NOTE: You must have an OpenAI and OpenRouter key to use both of these functions
+                      NOTE: You must have API keys from at least one of the AI Providers, or all 3 providers if you wish to use 
+                      all 3 functions.
                     Julian West
                     julianwest.me
                     https://github.com/J-DubApps

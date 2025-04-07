@@ -27,7 +27,7 @@ The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell 
 
 If you do not know how to locally-host your own Chat models and don't like the idea of giving "big AI" your money: might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models), and their pricing for "big AI models" is usually resonable.
 
-These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or in license-agreement. This code is NOT tested in, or intended for, any prod environment.
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or license-agreement. This code is NOT tested in, or intended for, any prod environment.
 
 ## Setup
 

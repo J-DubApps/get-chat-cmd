@@ -8,6 +8,12 @@
 
 The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions I use generating PS commands from natural language using APIs directly from the PS console.   Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
+## Features
+
+-   **Multiple AI Providers**: Supports OpenRouter, OpenAI, Anthropic, and locally-hosted models.
+-   **Natural Language Input**: Describe the command you need in plain English.
+-   **Clipboard Integration**: Automatically copies the generated command to your clipboard.
+
 ***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written (see info on obtaining API keys near the end of this Readme). You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
 
 If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  

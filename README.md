@@ -8,7 +8,7 @@
 
 The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions I use for: stating plain English requests to a chosen AI-LLM --> outputting a generated PS command -- to evaluate for use. The LLM outputs to console & copies output to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
-***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written. You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
+***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written (see info on obtaining API keys near the end of this Readme). You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
 
 If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  
 
@@ -95,6 +95,14 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 ```powershell
 . "C:\Users\username\Desktop\ai_powershell_commands.ps1"
 ```
+
+## Obtaining API Keys
+
+You can create accounts and obtain API keys inexpensively from these links:
+
+ [https://openrouter.ai/keys](https://openrouter.ai/keys)
+ [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+ [https://console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
 
 ## Disclaimer
 

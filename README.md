@@ -1,7 +1,7 @@
 # get-chat-cmd: AI PowerShell Command Generator
 
 This repository contains PowerShell functions that convert plain English requests into PowerShell commands using your chosen AI/LLM.  LLM outputs a PS command for review in console + copies the command to clipboard.  **NOTE**: You **must** have *your own* API key from at least one of the 3 included AI Service Providers in order to minimally use
-any one of the 3 functions included in `ai_powershell_commands.ps1`.
+any one of the 3 functions included in `ai_powershell_commands.ps1`.  These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).
 
 ## Functions
 

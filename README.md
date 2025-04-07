@@ -11,16 +11,16 @@ This repository contains PowerShell functions that convert plain English request
 ## Setup
 
 1. Edit `ai_powershell_commands.ps1` to replace:
-   - `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key
-   - `YOUR_OPENAI_API_KEY` with your actual OpenAI API key
-   - `YOUR_ANTHROPIC_API_KEY` with your actual OpenAI API key
+   - `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key  
+   - `YOUR_OPENAI_API_KEY` with your actual OpenAI API key  
+   - `YOUR_ANTHROPIC_API_KEY` with your actual OpenAI API key  
 
    **Note**:   If you primarily only use Openrouter.ai as your API gateway, the OpenAI and Anthropic
                models can be called through "openrouter/model-name" as well.  You'd simply modify the
                "get-chat-cmd2/3" functions accordingly.
                See [this link](https://openrouter.ai/models) for Openrouter models available.  
 
-3. Import the functions into your current PowerShell session:
+2. Import the functions into your current PowerShell session:
 
 ```powershell
 . C:\Users\username\Desktop\ai_powershell_commands.ps1

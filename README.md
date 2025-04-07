@@ -52,4 +52,4 @@ notepad $PROFILE
 Alternatively, you can add this line to your PowerShell profile to source the functions file:
 
 ```powershell
-. "C:\Users\westj\Desktop\ai_powershell_commands.ps1"
+. "C:\Users\username\Desktop\ai_powershell_commands.ps1"

@@ -11,6 +11,7 @@ if ($content -contains "YOUR_OPENROUTER_API_KEY" -or $content -contains "YOUR_OP
     Write-Host "Edit the file and replace:"
     Write-Host "  - YOUR_OPENROUTER_API_KEY with your actual OpenRouter API key"
     Write-Host "  - YOUR_OPENAI_API_KEY with your actual OpenAI API key`n"
+    Write-Host "  - YOUR_ANTHROPIC_API_KEY with your actual Anthropic API key`n"
     exit
 }
 
@@ -30,17 +31,18 @@ Write-Host "----------------"
 aicmd2 "Find files modified in the last 24 hours"
 Write-Host "----------------`n"
 
-# More examples
-Write-Host "Example 3: Using get-chat-cmd1 (OpenRouter - quasar-alpha)" -ForegroundColor Cyan
-Write-Host "Request: 'Check disk space usage for all drives'" -ForegroundColor White
-Write-Host "----------------"
-aicmd1 "Check disk space usage for all drives"
-Write-Host "----------------`n"
-
+# Demo for get-chat-cmd3 (Anthropic - claude-3-7-sonnet-20250219)
 Write-Host "Example 4: Using get-chat-cmd3 (Anthropic - claude-3-7-sonnet)" -ForegroundColor Blue
 Write-Host "Request: 'Create a scheduled task that runs every Monday at 9 AM'" -ForegroundColor White
 Write-Host "----------------"
 aicmd2 "Create a scheduled task that runs every Monday at 9 AM"
+Write-Host "----------------`n"
+
+# More examples
+Write-Host "Example 4: Using get-chat-cmd1 (OpenRouter - quasar-alpha)" -ForegroundColor Cyan
+Write-Host "Request: 'Check disk space usage for all drives'" -ForegroundColor White
+Write-Host "----------------"
+aicmd1 "Check disk space usage for all drives"
 Write-Host "----------------`n"
 
 Write-Host "Example 5: Using get-chat-local (LM Studio locally-hosted Anthropic - qwen2.5-coder-32b-instruct)" -ForegroundColor Magenta

@@ -57,7 +57,7 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 
 ## Disclaimer
 
-The functions provided in this repository are intended to assist in generating PowerShell commands through AI models. Users are responsible for reviewing and understanding the commands generated before execution. The author assumes no liability for unintended consequences resulting from the use or misuse of these functions, including but not limited to inaccurate prompts leading to undesired command outputs. Additionally, the author is not responsible for any API usage charges incurred while using these functions. Users should monitor their API usage to avoid unexpected costs.  
+The functions provided in this repository are intended to assist in generating PowerShell commands through AI models. **Users are responsible for reviewing and understanding the commands generated *before* execution**. **The author assumes no liability for unintended consequences resulting from the use or misuse of these functions, including but not limited to inaccurate prompts leading to undesired command outputs**. **Additionally, the author is not responsible for any API usage charges incurred while using these functions**. **Users should monitor their API usage to avoid unexpected costs**.  
 
 ## License
 

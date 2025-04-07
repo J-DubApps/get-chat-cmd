@@ -1,4 +1,4 @@
-# AI PowerShell Command Generator - Installation Script
+# J-Dub's AI PowerShell Command Generator - Installation Script
 # This script helps install the AI PowerShell command generator functions to your profile
 
 # Determine the right profile path
@@ -28,23 +28,25 @@ if ($content -match "YOUR_OPENROUTER_API_KEY" -or $content -match "YOUR_OPENAI_A
     
     $replace = Read-Host "Would you like to add your API keys now? (y/n)"
     if ($replace -eq "y") {
-        $openRouterKey = Read-Host "Enter your OpenRouter API key"
-        $openAIKey = Read-Host "Enter your OpenAI API key"
+        $openRouterKey = Read-Host "Enter your OpenRouter API key:"
+        $openAIKey = Read-Host "Enter your OpenAI API key:"
+        $anthropicKey = Read-Host "Enter your Anthropic API key:"
         
         $content = $content -replace "YOUR_OPENROUTER_API_KEY", $openRouterKey
         $content = $content -replace "YOUR_OPENAI_API_KEY", $openAIKey
+        $content = $content -replace "YOUR_ANTHROPIC_API_KEY", $anthropicKey
         
         Set-Content -Path $combinedFilePath -Value $content
         Write-Host "API keys updated successfully." -ForegroundColor Green
     }
     else {
-        Write-Host "Please manually edit ai_powershell_commands.ps1 to add your API keys before installing." -ForegroundColor Yellow
+        Write-Host "Please manually edit ai_powershell_commands.ps1 to add your API keys before installing or using." -ForegroundColor Yellow
         exit 1
     }
 }
 
 # Ask user for installation method
-Write-Host "`nHow would you like to install the AI PowerShell Command Generator?" -ForegroundColor Cyan
+Write-Host "`nHow would you like to install J-Dubs AI PowerShell Command Generator?" -ForegroundColor Cyan
 Write-Host "1. Copy functions directly into PowerShell profile"
 Write-Host "2. Add a reference to the functions file in PowerShell profile"
 $choice = Read-Host "Enter choice (1 or 2)"
@@ -71,5 +73,7 @@ switch ($choice) {
 Write-Host "`nInstallation complete! Please restart PowerShell or reload your profile with:"
 Write-Host ". $PROFILE" -ForegroundColor Cyan
 Write-Host "`nYou can now use the commands:" -ForegroundColor Green
-Write-Host "get-chat-cmd1 'your plain English request for PowerShell command'"
-Write-Host "get-chat-cmd2 'your plain English request for PowerShell command'"
+Write-Host "get-chat-cmd1 'your plain English request for PowerShell command answered by Openrouter'"
+Write-Host "get-chat-cmd2 'your plain English request for PowerShell command answered by OpenAI'"
+Write-Host "get-chat-cmd3 'your plain English request for PowerShell command answered by Anthropic'"
+Write-Host "get-chat-local 'for locally-hosted chatbot and plain English request for PowerShell command'"

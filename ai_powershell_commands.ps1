@@ -153,6 +153,13 @@ function get-chat-cmd3 {
         # Extract just the command from the response
         $commandResponse = $response.content[0].text.Trim()
         
+        # Copy the command to clipboard
+        $commandResponse | Set-Clipboard
+        
+        # Display the command in blue text
+        Write-Host $commandResponse -ForegroundColor Blue
+        Write-Host "Command copied to clipboard!" -ForegroundColor Green
+        
         return $commandResponse
     }
     catch {

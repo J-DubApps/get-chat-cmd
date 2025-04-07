@@ -8,9 +8,9 @@
 
 This repo contains my PowerShell functions I use to: state plain English requests to my chosen AI-LLM, receiving back a PS command. The LLM outputs the PS command for review on the console & copies the command to clipboard. In the gif animation above, I am asking 3 different AI models for commands via a plain-english "goal statement".  **NOTE**: you **must** have *your own* API keys to use all 3 of these functions in `ai_powershell_commands.ps1`, or *at least one* if you want to only use a single AI provider (PS [Openrouter.ai](https://openrouter.ai) us a great gateway to use different popular AI models).  
 
-Also you can rename the functions to anything you want (I think "`get-ai-cmd`" is better, but I'm too lazy to rename everything 😂).
+Also you can rename the functions to anything you want (I think "`get-ai-cmd`" was better but I'm too lazy to rename everything 😂).
 
-These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).  See disclaimer at bottom, this code is NOT tested or intended in any prod environment.
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested).  Engineers & Vibe-Coders alike, please see disclaimer at bottom! This code is NOT tested or intended in any prod environment.
 
 ## Functions
 
@@ -77,7 +77,7 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 
 ## Disclaimer
 
-The functions provided in this repository are intended to assist in generating PowerShell commands through AI models. **Users are responsible for reviewing and understanding the commands generated *before* execution**. **The author assumes no liability for unintended consequences resulting from the use or misuse of these functions, including but not limited to inaccurate prompts leading to undesired command outputs**. **Additionally, the author is not responsible for any API usage charges incurred while using these functions**. **Users should monitor their API usage to avoid unexpected costs**.  
+The functions provided in this repository are intended to assist in generating PowerShell commands through AI models in a *test environment only* and they are not intended for use in any production scenario. **Users are responsible for reviewing and understanding the commands generated *before* execution**. **The author assumes *zero liability* for unintended consequences resulting from the use or misuse of these functions, including but not limited to poor-prompting which might create undesired command outputs**. **Additionally, the author is not responsible for *any* API usage charges incurred while using these functions**. **Users should monitor their API usage to avoid unexpected costs**.  
 
 ## License
 

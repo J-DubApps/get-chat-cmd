@@ -58,7 +58,7 @@ function get-chat-cmd1 {
     }
 }
 
-function get-chat-cmd1 {
+function get-chat-cmd2 {
     param(
         [Parameter(Mandatory = $true)]
         [string]$Request
@@ -102,6 +102,54 @@ function get-chat-cmd1 {
     catch {
         Write-Host "Error: $_" -ForegroundColor Red
     }
+}
+
+function get-chat-cmd3 {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$prompt
+    )
+
+    # Set your Anthropic API key (you may want to store this more securely)
+    $AnthropicAPIKey = "YOUR_ANTHROPIC_API_KEY_HERE"
+
+    # Create a guiding prompt to ensure Claude only responds with a PowerShell command
+    $systemContent = "You are a PowerShell expert. Respond ONLY with the PowerShell command that accomplishes the user's request. Do not include explanations, warnings, or anything else - JUST the command. If multiple commands are needed, combine them appropriately with semicolons or line continuation."
+
+    # Prepare the API request body
+    $body = @{
+        model = "claude-3-7-sonnet-20250219"
+        max_tokens = 1000
+        temperature = 0.1
+        system = $systemContent
+        messages = @(
+            @{
+                role = "user"
+                content = $prompt
+            }
+        )
+    } | ConvertTo-Json
+
+    # Set request headers
+    $headers = @{
+        "Content-Type" = "application/json"
+        "anthropic-version" = "2023-06-01"
+        "x-api-key" = $AnthropicAPIKey
+    }
+
+    # Make the API call
+    try {
+        $response = Invoke-RestMethod -Uri "https://api.anthropic.com/v1/messages" -Method Post -Headers $headers -Body $body
+        
+        # Extract just the command from the response
+        $commandResponse = $response.content[0].text.Trim()
+        
+        return $commandResponse
+    }
+    catch {
+        Write-Error "Error making request to Anthropic API: $_"
+        return $null
+    }
 }
 
 #region LICENSE

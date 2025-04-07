@@ -221,7 +221,7 @@ function get-chat-local {
         $commandResponse | Set-Clipboard
         
         # Display the command in blue text
-        Write-Host $commandResponse -ForegroundColor Blue
+        Write-Host $commandResponse -ForegroundColor Magenta
         Write-Host "Command copied to clipboard!" -ForegroundColor Green
         
         return $commandResponse

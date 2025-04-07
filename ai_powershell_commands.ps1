@@ -169,7 +169,7 @@ function get-chat-cmd3 {
     }
 }
 
-function get-cmd-local {
+function get-chat-local {
     param (
         [Parameter(Mandatory = $true)]
         [string]$prompt,

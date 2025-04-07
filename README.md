@@ -100,8 +100,8 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 
 You can create accounts and obtain API keys inexpensively from these links:
 
- [https://openrouter.ai/keys](https://openrouter.ai/keys)
- [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+ [https://openrouter.ai/keys](https://openrouter.ai/keys)  
+ [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)  
  [https://console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
 
 ## Disclaimer

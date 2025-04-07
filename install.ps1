@@ -71,5 +71,5 @@ switch ($choice) {
 Write-Host "`nInstallation complete! Please restart PowerShell or reload your profile with:"
 Write-Host ". $PROFILE" -ForegroundColor Cyan
 Write-Host "`nYou can now use the commands:" -ForegroundColor Green
-Write-Host "aicmd1 'your plain English request for PowerShell command'"
-Write-Host "aicmd2 'your plain English request for PowerShell command'"
+Write-Host "get-chat-cmd1 'your plain English request for PowerShell command'"
+Write-Host "get-chat-cmd2 'your plain English request for PowerShell command'"

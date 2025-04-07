@@ -13,6 +13,7 @@ This repository contains PowerShell functions that convert plain English request
 1. Edit `ai_powershell_commands.ps1` to replace:  
    - `YOUR_OPENROUTER_API_KEY` with your actual OpenRouter API key  
    - `YOUR_OPENAI_API_KEY` with your actual OpenAI API key
+   
    - `test`
    - `YOUR_ANTHROPIC_API_API_KEY` with your actual Anthropoic API key
 

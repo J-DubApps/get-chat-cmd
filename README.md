@@ -1,7 +1,8 @@
 # get-chat-cmd: AI PowerShell Command Generator
 
-This repository contains PowerShell functions that convert plain English requests into PowerShell commands using your chosen AI/LLM.  LLM outputs a PS command for review in console + copies the command to clipboard. **NOTE**: You **must** have *your own* API key from at least one of the 3 included AI Service Providers in order to minimally use
-any one of the 3 functions included in `ai_powershell_commands.ps1`.  
+
+
+This repo contains my PowerShell functions that I use for stating plain English requests to your chosen AI-LLM, and receiving back a PS command.  LLM outputs a PS command for review in console + copies the command to clipboard. **NOTE**: You **must** have *your own* API key from *at least one* of the 3 included AI Service Providers in order to minimally use *any one* of the 3 functions in `ai_powershell_commands.ps1`.  It is not expensive to maintain 3 API keys for these providers (and Openrouter is a gateway to multiple popular AI models).  
 
 These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).  
 Also you can rename the functions to anything you want (I think "`get-ai-cmd`" is better, but I'm too lazy to rename everything 😂).
@@ -19,9 +20,9 @@ Also you can rename the functions to anything you want (I think "`get-ai-cmd`" i
 — `YOUR_OPENAI_API_KEY` with your actual OpenAI API key  <br />
 — `YOUR_ANTHROPIC_API_API_KEY` with your actual Anthropoic API key
 
-   **Note**:   If you primarily only use Openrouter.ai as your API gateway, the OpenAI and Anthropic
-               models can be called through "openrouter/model-name" as well.  You'd simply modify the
-               "get-chat-cmd2/3" functions accordingly.
+   **Note**:   If you primarily only use, say,  Openrouter.ai as your API gateway: the OpenAI and Anthropic
+               models can be called through "openrouter/model-name" as well.  You'd simply comment-out the
+               "`get-chat-cmd2/3`" functions accordingly, and copy/use "`get-chat-cmd1`" for other Openrouter models.
                See [this link](https://openrouter.ai/models) for Openrouter models available.  
 
 3. Import the functions into your current PowerShell session:

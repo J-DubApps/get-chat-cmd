@@ -16,7 +16,8 @@
                     For more info see https://github.com/J-DubApps/get-chat-cmd/blob/main/README.md
                 .NOTES
                       NOTE: You must have API keys from at least one of the AI Providers, or all 3 providers if you wish to use 
-                      all 3 functions.
+                      all 3 functions. The 'get-chat-local' Function is the only one that doesn't require an API key, for those who 
+                      are able to locally-host their own LLM Models (via LM Studio, Ollama, etc).
                     Julian West
                     julianwest.me
                     https://github.com/J-DubApps

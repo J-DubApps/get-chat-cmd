@@ -10,18 +10,18 @@ The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell 
 
 ***NOTE***: you **must** have *your own* API keys with all 3 AI providers to use the 3 main functions in `ai_powershell_commands.ps1`, as-written. You can *optionally* choose to leverage one function for a single preferred AI provider ***or***, if you host your own Chat models ***locally***: I provide a 4th function for use with locally-hosted models (via LM Studio, Ollama, etc)--`get-chat-local`. 
 
-If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway to use [many different free and paid models](https://openrouter.ai/models).  
+If you do not know how to locally-host an LLM or find major providers expensive, might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models).  
 
-Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I'm too lazy to rename everything 😂).
+Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I am too lazy to rename everything 😂).
 
-These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested).  Engineers & Vibe-Coders alike, listen-up: see disclaimer here and in the license-agreement. This code is NOT tested in, or intended for, any prod environment.
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or in license-agreement. This code is NOT tested in, or intended for, any prod environment.
 
 ## Functions
 
 - `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/quasar-alpha" model
 - `get-chat-cmd2`: Uses OpenAI's API with the "gpt-4o-mini" model
 - `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
-- `get-chat-local`: Optional function that makes calls to locally-hosted Chat model (only tested with LM Studio)
+- `get-chat-local`: Optional function for calls to locally-hosted Chat models (only tested with LM Studio)
  
 ## Setup
 
@@ -32,8 +32,9 @@ These functions are intended for use in **PowerShell Core 7.5+** (they may work 
 
    **Note**:   If you primarily only use, say,  Openrouter.ai as your API gateway: the OpenAI and Anthropic
                models can be called through "openrouter/model-name" as well.  You'd simply comment-out the
-               "`get-chat-cmd2/3`" functions accordingly, and copy/use "`get-chat-cmd1`" for other Openrouter models.
-               See [this link](https://openrouter.ai/models) for Openrouter models available.  
+               "`get-chat-cmd2/3`" functions accordingly, and copy/use "`get-chat-cmd1`" for other Openrouter-proxied models.
+               See [this link](https://openrouter.ai/models) for Openrouter models available.
+               No API key is required for the optional "`get-chat-local`" function but your *locally-hosted* model must be accepting API requests.
 
 3. Import the functions into your current PowerShell session:
 

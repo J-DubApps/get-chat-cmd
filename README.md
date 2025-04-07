@@ -6,10 +6,11 @@
   width="600" 
   height="400">
 
-This repo contains my PowerShell functions I use to: state plain English requests to my chosen AI-LLM, receiving back a PS command. The LLM outputs the PS command for review on the console & copies the command to clipboard. **NOTE**: you **must** have *your own* API keys to use all 3 of these functions in `ai_powershell_commands.ps1`, or *at least one* if you want to only use a single AI provider (PS [Openrouter.ai](https://openrouter.ai) us a great gateway to use different popular AI models).  
+This repo contains my PowerShell functions I use to: state plain English requests to my chosen AI-LLM, receiving back a PS command. The LLM outputs the PS command for review on the console & copies the command to clipboard. In the gif animation above, I am asking 3 different AI models for commands via a plain-english "goal statement".  **NOTE**: you **must** have *your own* API keys to use all 3 of these functions in `ai_powershell_commands.ps1`, or *at least one* if you want to only use a single AI provider (PS [Openrouter.ai](https://openrouter.ai) us a great gateway to use different popular AI models).  
 
-These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).  
 Also you can rename the functions to anything you want (I think "`get-ai-cmd`" is better, but I'm too lazy to rename everything 😂).
+
+These functions have only been tested in **PowerShell Core 7.5** (they may work in 5.1, just haven't tested).  See disclaimer at bottom, this code is NOT tested or intended in any prod environment.
 
 ## Functions
 

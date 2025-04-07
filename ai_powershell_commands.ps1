@@ -5,11 +5,12 @@
                     This PS Script provides access to my current Functions leveraging three of my favorite 
                     LLMs for PS command-building (via popular AI LLMs) on-the-fly.  
                     The 3 models I use are hosted at Anthropic, OpenAI, and OpenRouter - they are (in order of pricing 
-                    in spring 2025) :
-                    
+                    in spring 2025):
                     openrouter/quasar-alpha
                     gpt-4o-mini
                     claude-3-7-sonnet-20250219
+
+                    These functions have only been tested in PowerShell Core 7.5 (they may work in 5.1, just haven't tested).
                     
                     For more info see https://github.com/J-DubApps/get-chat-cmd/blob/main/README.md
                 .NOTES

@@ -37,10 +37,16 @@ Write-Host "----------------"
 aicmd1 "Check disk space usage for all drives"
 Write-Host "----------------`n"
 
-Write-Host "Example 4: Using get-chat-cmd2 (OpenAI - gpt-4o-mini)" -ForegroundColor Green
+Write-Host "Example 4: Using get-chat-cmd3 (Anthropic - claude-3-7-sonnet)" -ForegroundColor Blue
 Write-Host "Request: 'Create a scheduled task that runs every Monday at 9 AM'" -ForegroundColor White
 Write-Host "----------------"
 aicmd2 "Create a scheduled task that runs every Monday at 9 AM"
 Write-Host "----------------`n"
 
-Write-Host "Demo completed. Try your own requests with get-chat-cmd1 and get-chat-cmd2!" -ForegroundColor Magenta
+Write-Host "Example 5: Using get-chat-local (LM Studio locally-hosted Anthropic - qwen2.5-coder-32b-instruct)" -ForegroundColor Magenta
+Write-Host "Request: 'Create a scheduled task that runs every Monday at 9 AM'" -ForegroundColor White
+Write-Host "----------------"
+aicmd2 "Create a scheduled task that runs every Monday at 9 AM"
+Write-Host "----------------`n"
+
+Write-Host "Demo completed. Try your own requests with get-chat-cmd1-3 (or the optional get-chat-local)" -ForegroundColor Yellow

@@ -6,13 +6,14 @@
   width="400" 
   height="250">
 
-The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions for generating PS commands from natural language using APIs directly from the PS console. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
+The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions for: **generating PS commands from natural language using APIs directly from a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
 ## Features
 
 -   **Multiple AI Providers**: Supports OpenRouter, OpenAI, Anthropic, and locally-hosted models.
 -   **Natural Language Input**: Describe the command you need in plain English.
 -   **Clipboard Integration**: Automatically copies the generated command to your clipboard.
+-   **Multi-platform**: Coded for PowerShell Core 7.5+, so it supports Windows, Linux, and MacOS (anywhere PS Core can deploy).
 
 ## Functions
 

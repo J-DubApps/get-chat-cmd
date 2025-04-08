@@ -1,4 +1,4 @@
-# get-chat-cmd: AI PowerShell Command Generator
+# get-chat-cmd: AI Command Generator for PowerShell
 
 <img 
   src="https://raw.githubusercontent.com/J-DubApps/get-chat-cmd/main/get-chat-cmd.gif" 

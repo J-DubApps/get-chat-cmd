@@ -6,7 +6,7 @@
   width="400" 
   height="250">
 
-The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions I use generating PS commands from natural language using APIs directly from the PS console.   Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
+The script **`ai_powershell_commands.ps1`** in this repo contains my PowerShell functions for generating PS commands from natural language using APIs directly from the PS console. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 
 ## Features
 

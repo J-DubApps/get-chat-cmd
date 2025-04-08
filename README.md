@@ -3,8 +3,8 @@
 <img 
   src="https://raw.githubusercontent.com/J-DubApps/get-chat-cmd/main/get-chat-cmd.gif" 
   alt="Animated GIF" 
-  width="400" 
-  height="250">
+  width="600" 
+  height="350">
 
 The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell functions for: **generating PS commands from natural language using APIs directly from a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
 

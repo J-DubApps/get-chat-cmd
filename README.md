@@ -6,7 +6,7 @@
   width="600" 
   height="350">
 
-The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell functions for: **generating PS commands from natural language using APIs directly from a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  
+The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell functions for: **generating PS commands from natural language using API calls to popular AI models, from within a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  These PS functions are written for [PowerShell Core](https://github.com/PowerShell/PowerShell) on Windows, Linux/WSL2, or MacOS (they may work in 5.1, untested).  I also created a variation of this project for [**Bash**](https://www.gnu.org/software/bash/manual/bash.html) (also tested Linux and MacOS) which can be found [***here***](https://github.com/J-DubApps/get_chat_cmd).
 
 ## Features
 
@@ -28,7 +28,7 @@ The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell
 
 If you do not know how to locally-host your own Chat models and don't like the idea of giving "big AI" your money: might I suggest [**Openrouter.ai**](https://openrouter.ai) which is a fantastic gateway for [many different free and paid models](https://openrouter.ai/models), and their pricing for "big AI models" is usually resonable.
 
-These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, just haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or license-agreement. This code is NOT tested in, or intended for, any prod environment.
+These functions are intended for use in **PowerShell Core 7.5+** (they may work in 5.1, haven't tested). Engineers & Vibe-Coders listen-up: see disclaimer below or license-agreement. This code is NOT tested in, or intended for, any prod environment.
 
 ## Setup
 

@@ -6,11 +6,13 @@
   width="600" 
   height="350">
 
-The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell functions for: **generating PS commands from natural language using API calls to popular AI models, from within a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  These PS functions are written for [PowerShell Core](https://github.com/PowerShell/PowerShell) on Windows, Linux/WSL2, or MacOS (they may work in 5.1, untested).  I also created a variation of this project for [**Bash**](https://www.gnu.org/software/bash/manual/bash.html) (also tested Linux and MacOS) which can be found [***here***](https://github.com/J-DubApps/get_chat_cmd).
+The repo contains a script (**`ai_powershell_commands.ps1`**) with my PowerShell functions for: **generating PS commands from natural language using API calls to popular AI models, from within a PS session**. Generated PS commands are output to console for evaluation, and copied to the clipboard. In the gif animation above I am asking 3 popular AI models for code snippets, using basic plain-English requests.  **Requests should be short and goal/outcome-oriented**.  These PS functions are written for [PowerShell Core](https://github.com/PowerShell/PowerShell) on Windows, Linux/WSL2, or MacOS (they may work in 5.1, untested).  
+
+I also maintain a variation of this same project for [**Bash**](https://www.gnu.org/software/bash/manual/bash.html) (tested in Ubuntu and MacOS) which can be found [***here***](https://github.com/J-DubApps/get_chat_cmd).
 
 ## Features
 
--   **Multiple AI Providers**: Supports OpenRouter, OpenAI, Anthropic, and locally-hosted models.
+-   **Multiple AI Providers**: My PS Functions use OpenRouter, OpenAI, Anthropic, and locally-hosted models.
 -   **Natural Language Input**: Describe the command you need in plain English.
 -   **Clipboard Integration**: Automatically copies the generated command to your clipboard.
 -   **Multi-platform**: Coded for PowerShell Core 7.5+, so it supports Windows, Linux, and MacOS (anywhere PS Core can deploy).

@@ -79,9 +79,12 @@ get-chat-cmd2 "Find all .csv files created in the past 12 hours"  # directs requ
 
 > ```Get-ChildItem -Path . -Filter *.csv | Where-Object { $_.CreationTime -ge (Get-Date).AddHours(-12) }```
 
-> ```Command copied to clipboard.```
+```powershell
+get-chat-cmd3 "return the current time in UTC format"   # directs request to Claude 3.7 and returns:
+```
+> ```Get-Date -UFormat "%Y-%m-%d %H:%M:%S UTC"```
 
-### If using the optional **```get-chat-local```** function, you have additional parameters available:
+### If using the optional **```get-chat-local```** function (to interact with a locally-running LLM), you have use additional parameters:
 
 #### Basic get-chat-local usage with defaults
 ```powershell

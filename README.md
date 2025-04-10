@@ -71,7 +71,7 @@ These functions will:
 2. Display the resulting PowerShell command in colored text (without executing any code)
 3. Copy the command to your clipboard for easy use
 
-### Examples:
+### More Examples:
 
 ```powershell
 get-chat-cmd2 "Find all .csv files created in the past 12 hours"  # directs request to ChatGPT 4o and returns:
@@ -84,7 +84,7 @@ get-chat-cmd3 "return the current time in UTC format"   # directs request to Cla
 ```
 > ```Get-Date -UFormat "%Y-%m-%d %H:%M:%S UTC"```
 
-### If using the optional **```get-chat-local```** function (to interact with a locally-running LLM), you have use additional parameters:
+### If using the optional ```get-chat-```***```local```** function (to interact with a locally-running LLM), you have use additional parameters:
 
 #### Basic get-chat-local usage with defaults
 ```powershell

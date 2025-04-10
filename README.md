@@ -118,7 +118,7 @@ Alternatively, you can add this line to your PowerShell profile to source the fu
 . "C:\Users\username\Desktop\ai_powershell_commands.ps1"
 ```
 
-Remember you will need at least *one* API Key to query one of 3 popular LLMs!  
+*Remember* you will need *at least one* API Key to query one of 3 popular LLMs!  
 
 Also you can rename the functions however you'd like (I think "`get-ai-cmd`" was better but I am too lazy to rename everything 😂).
 

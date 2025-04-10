@@ -90,7 +90,7 @@ get-chat-cmd3 "return the current time in UTC format"   # directs request to Cla
 ```powershell
 get-chat-local "List all processes using more than 100MB of memory"
 ```
-##### *Custom endpoint if using different port*
+##### *Custom local LLM using different port*
 ```powershell
 get-chat-local -prompt "Find all .log files modified in the last 24 hours" -endpoint "http://localhost:8080/v1/chat/completions"
 ```

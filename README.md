@@ -71,6 +71,17 @@ These functions will:
 2. Display the resulting PowerShell command in colored text (without executing any code)
 3. Copy the command to your clipboard for easy use
 
+### Examples:
+
+```powershell
+get-chat-cmd2 "Find all .csv files created in the past 12 hours"  # directs request to ChatGPT 4o and returns:
+```
+
+> ```Get-ChildItem -Path . -Filter *.csv | Where-Object { $_.CreationTime -ge (Get-Date).AddHours(-12) }
+
+Command copied to clipboard.
+```
+
 ### If using the optional **```get-chat-local```** function, you have additional parameters available:
 
 #### Basic get-chat-local usage with defaults

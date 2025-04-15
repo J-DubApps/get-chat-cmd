@@ -19,7 +19,7 @@ I also maintain a variation of this same project for [**Bash**](https://www.gnu.
 
 ## Functions
 
-- `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/quasar-alpha" model
+- `get-chat-cmd1`: Uses OpenRouter's API with the "openrouter/deepseek/deepseek-chat-v3-0324:free" model
 - `get-chat-cmd2`: Uses OpenAI's API with the "gpt-4o-mini" model
 - `get-chat-cmd3`: Uses Anthropic's API with the "claude-3-7-sonnet-20250219" model
 - `get-chat-local`: Optional function for calls to locally-hosted Chat models (only tested with LM Studio)
@@ -56,7 +56,7 @@ These functions are intended for use in **PowerShell Core 7.5+** (they may work 
 Simply call either function with your plain English request:
 
 ```powershell
-# Using OpenRouter (quasar-alpha)
+# Using OpenRouter (deepseek/deepseek-chat-v3-0324:free)
 get-chat-cmd1 "List all running processes sorted by memory usage"
 
 # Using OpenAI (gpt-4o-mini)

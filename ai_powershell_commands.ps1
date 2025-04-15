@@ -7,7 +7,7 @@
                     making calls to a locally-hosted LLM (LM Studio / Ollama / etc).
                     The 3 main models I use are hosted at Anthropic, OpenAI, and OpenRouter - they are (in order of pricing 
                     in spring 2025):
-                    openrouter/quasar-alpha
+                    openrouter/deepseek/deepseek-chat-v3-0324:free
                     gpt-4o-mini
                     claude-3-7-sonnet-20250219
 
@@ -40,7 +40,7 @@ function get-chat-cmd1 {
     }
     
     $body = @{
-        model = "openrouter/quasar-alpha"
+        model = "openrouter/deepseek/deepseek-chat-v3-0324:free"
         messages = @(
             @{
                 role = "system"
